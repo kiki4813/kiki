@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <title>YOHO!BUY 有货-潮流服饰购物网站,时尚潮流购物风向标</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-cen"> 
+            <div class="yoho-group-map fl">
+                <span class="hamburger" style="background-image: url(images/ia_100000109.png)"></span>
+                <a href="javascript:">YOHO!BUY 有货</a>
+            </div>
+            <div class="swindle-info fl">
+                <span class="icon-note" style="background-image: url(images/ia_100000109.png)"></span>
+                <a href="javascript:">
+                    关于防诈骗的重要提醒
+                </a>
+            </div>
+            <div class="yoho-buy-tools fr">
+                <ul>
+                    <li id="loginBox">
+                        <span class="hi">Hi~</span>
+                        [<a id="signin-url" href="login.html" class="loginbar" rel="nofollow">请登录</a>] 
+                        [<a id="reg-url" href="login.html" class="registbar" rel="nofollow">免费注册</a>] 
+                    </li>
+                    <li class="myyoho" id="myYohoBox">
+                        <span class="tag-seprate"></span>
+                        <a href="javascript:" rel="nofollow">MY有货</a>
+                        <span class="icon-bottomarrow" style="background-image: url(images/ia_100000109.png)"></span>
+                        <div class="simple-user-center"></div>
+                    </li>
+                    <li class="myorder">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-papers" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="javascript:" rel="nofollow">我的订单</a>
+                    </li>
+                    <li class="mycollect">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-heart" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="javascript:" rel="nofollow">我的收藏</a>
+                    </li>
+                    <li class="message">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-mail" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="javascript:" rel="nofollow">消息</a>
+                    </li>
+                    <li class="help nav-drop-down-container">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-bottomarrow" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="#">客户服务</a>
+                        <ul class="nav-drop-down" style="display: none;">
+                            <li>
+                                <a href="javascript:" class="nav-drop-down-a" rel="nofollow" target="_blank">在线客服</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" rel="nofollow">帮助中心</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="we-chat download-code">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-chat" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="">关注有货</a>
+                        <div class="download-app-box" style="display: none;">
+                            <div class="we-chat-img code-img" style="background-image: url(images/ia_100000112.png)"></div>
+                            <h5 class="qr-words">微信扫一扫</h5>
+                            <h5 class="qr-words">关注公众号，送球鞋</h5>
+                        </div>
+                    </li>
+                    <li class="phoneapp download-code" id="phoneApp">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-phone" style="background-image: url(images/ia_100000109.png);"></span>
+                        <a href="javascript:" rel="nofollow">手机版</a>
+                        <div class="download-app-box" style="display: none;">
+                            <div class="qr-img code-img" style="background-image: url(images/ia_100000114.png)"></div>
+                            <h5 class="qr-words">下载手机客户端</h5>
+                            <h5 class="qr-more">
+                                <a href="javascript:">更多客户端</a>
+                            </h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="search clr">
+        <div class="search-cen">
+            <h1 class="main-logo" style="background-image: url(images/ia_100000116.png);">
+                <a href="javascript:" class="main-link" title="YOHO!BUY 有货-潮流服饰,潮流女装,潮流男装,时尚潮流购物网站"></a>
+            </h1>
+            <div class="search-area fr">
+                <div class="search-2020">
+                    <form action="javascript:" method="GET" id="search-form">
+                        <input type="hidden" id="defaultsearch" value="">
+                        <input class="search-key fl"  type="text" name="query" id="query-key" autocomplete="off" value="" maxlength="30">
+                        <a class="search-btn fl" href="javascript:submitSearch();" style="background-image: url(images/ia_100000117.png);"></a>
+                    </form>
+                </div>
+                <div class="shopcar fr">
+                    <a href="shopcar.html" rel="nofollow">
+                        <span class="icon-shopcar "><img src="images/ia_100000120.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav clr">
+        <div class="nav-cen">
+            <ul class="nav-list">
+                <li><a href="javascript:">新品到着</a></li>
+                <li><a href="javascript:">品牌一览</a></li>
+                <li class="contain-third " id="contain1">
+                    <a href="javascript:">服饰</a> 
+                   <div class="third-nav-wrapper" id="third-nav" style="display: none;">
+                         <div class="center-content">
+                            <dl class="hide-list hide"> 
+                                    <!-- <dt>
+                                        <h3 class=""><a href="javascript:">上装</a></h3>
+                                    </dt>
+                                        <dd>
+                                            <a href="javascript:">T恤</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:"
+                                               class="hot">卫衣</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:"
+                                               class="hot">夹克</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">衬衫</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">POLO</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">防风外套</a>
+                                        </dd>
+                                    <dt>
+                                    <h3 class=""><a href="javascript:">下装</a></h3>
+                                    </dt>
+                                        <dd>
+                                            <a href="javascript:"
+                                               class="hot">休闲裤</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">牛仔裤</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">运动裤</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">短裤</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">工装裤</a>
+                                        </dd>
+                                    <dt>
+                                    <h3 class=""><a href="javascript:">热门品牌</a></h3>
+                                    </dt>
+                                        <dd>
+                                            <a href="javascript:">Dickies</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">Levi’s</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">DUSTY</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">THETHING</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">viishow</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:"class="hot">STORE by NIGO®</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:"class="hot">NBA STYLE</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:"class="hot">鬼洗</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">Lee</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:"class="hot">CHAMPION</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">白卷BAIJUAN</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="javascript:">BOY LONDON</a>
+                                        </dd> -->
+                            </dl> 
+                        </div>
+                    </div> 
+                </li>
+                <li class="contain-third"><a href="javascript:">鞋履</a></li>
+                <li class="contain-third"><a href="javascript:">包袋</a></li>
+                <li class="contain-third"><a href="javascript:">配饰.其他</a></li>
+                <li><a href="javascript:">SALE</a></li>
+                <li><a href="javascript:">证照/协议</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="code-box">
+        <div class="shut">×</div>
+        <div class="code-box-img" style="background-image: url(images/ia_100000121.png);"></div>
+        <h5 class="code-box-title">下载手机客户端</h5>
+    </div>
+    <div class="main-cen">
+        <div class="banner">
+            <ul class="imgBox clr">
+              <li><img src="images/ia_100000004.jpg" alt=""></li>
+              <li><img src="images/ia_100000005.jpg" alt=""></li>
+              <li><img src="images/ia_100000006.jpg" alt=""></li>
+              <li><img src="images/ia_100000004.jpg" alt=""></li>
+              <li><img src="images/ia_100000005.jpg" alt=""></li>
+            </ul>
+            <ol class="pointBox">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <div class="leftRightTabs">
+              <a href="#" class="left">&#139</a>
+              <a href="#" class="right">&#155</a>
+            </div>
+        </div>
+        <div class="singlehot clr">
+            <div class="header-floor clr">
+                <h2 class="floor-title clr">人气单品</h2>
+            </div>
+            <ul class="g-list imgopacity">
+                <!-- <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000008.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000007.jpg" alt=""></a></li>
+                <li class="g-list-last"><a href="javascript:"><img src="images/ia_100000005.jpg" alt=""></a></li> -->
+            </ul>
+        </div>
+        <div class="header-floor clr">
+            <h2 class="floor-title clr">优选品牌</h2>
+        </div>
+        <div class="brand-banner clr">
+            <ul>
+                <li><a href="javascript:"><img src="images/ia_100000017.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000018.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000019.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000020.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000021.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100000022.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="brand-logo">
+            <ul class="b-logo">
+                <!-- <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li> -->
+                <li class="brand-logo-btn" style="background-image: url(images/ia_100000122.png);">
+                    <a class="prev" href="javascript:">&#139</a>
+                    <a class="next" href="javascript:">&#155</a>
+                </li>
+                <!-- <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li>
+                <li><a href="javascript:"><img src="images/ia_100001322.jpg" alt=""></a></li> -->
+                <li class="brand-more">
+                    <a href="javascript:">MORE></a>
+                </li>
+            </ul>
+        </div>  
+        <div class="jacket clr">
+            <div class="header-floor clr">
+                <h2 class="floor-title clr">潮流上装</h2>
+                <ul class="header-more">
+                    <li>
+                        <a href="javascript:">MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="jacket-list clr">
+                <div class="jacket-list-one fl clr">
+                    <div class="jacket-list-one-top clr">
+                        <a class="jacket-list-one-top1 clr" href="javascript:"><img src="images/ia_100001413.jpg" alt=""></a>
+                        <a class="jacket-list-one-top2 clr" href="javascript:"><img src="images/ia_100001429.jpg" alt=""></a>
+                    </div>
+                    <div class="jacket-list-one-navs clr">
+                        <a href="javascript:">T恤</a>
+                        <a href="javascript:">卫衣</a>
+                        <a href="javascript:">夹克</a>
+                        <a href="javascript:">衬衫</a>
+                        <a href="javascript:">POLO</a>
+                        <a href="javascript:">风衣</a>
+                        <a href="javascript:">PUMA</a>
+                        <a href="javascript:">DC</a>
+                        <a href="javascript:">Timberland</a>
+                        <a href="javascript:">Converse</a>
+                        <a href="javascript:">VANS</a>
+                        <a href="javascript:">HIPANDA</a>
+                    </div>
+                </div>
+                <div class="jacket-list-two fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001430.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001431.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="jacket-list-three  fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jacket-bottom clr">
+                <ul>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001484.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="trousers clr">
+            <div class="header-floor clr">
+                <h2 class="floor-title clr">潮流下装</h2>
+                <ul class="header-more">
+                    <li>
+                        <a href="javascript:">MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="trousers-list clr">
+                <div class="trousers-list-one fl clr">
+                    <div class="trousers-list-one-top clr">
+                        <a class="trousers-list-one-top1 clr" href="javascript:"><img src="images/ia_100001518.jpg" alt=""></a>
+                        <a class="trousers-list-one-top2 clr" href="javascript:"><img src="images/ia_100001519.jpg" alt=""></a>
+                    </div>
+                    <div class="trousers-list-one-navs clr">
+                        <a href="javascript:">休闲裤</a>
+                        <a href="javascript:">牛仔裤</a>
+                        <a href="javascript:">运动裤</a>
+                        <a href="javascript:">工装裤</a>
+                        <a href="javascript:">束口裤</a>
+                        <a href="javascript:">短裤</a>
+                        <a href="javascript:">Lee</a>
+                        <a href="javascript:">鬼洗</a>
+                        <a href="javascript:">Dickies</a>
+                        <a href="javascript:">DUSTY</a>
+                        <a href="javascript:">Levi’s</a>
+                        <a href="javascript:">THETHING</a>
+                    </div>
+                </div>
+                <div class="trousers-list-two fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001430.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001431.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="trousers-list-three  fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="trousers-bottom clr">
+                <ul>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001484.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="shoes clr">
+            <div class="header-floor clr">
+                <h2 class="floor-title clr">时尚鞋履</h2>
+                <ul class="header-more">
+                    <li>
+                        <a href="javascript:">MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shoes-list clr">
+                <div class="shoes-list-one fl clr">
+                    <div class="shoes-list-one-top clr">
+                        <a class="shoes-list-one-top1 clr" href="javascript:"><img src="images/ia_100001641.jpg" alt=""></a>
+                        <a class="shoes-list-one-top2 clr" href="javascript:"><img src="images/ia_100001652.jpg" alt=""></a>
+                    </div>
+                    <div class="shoes-list-one-navs clr">
+                        <a href="javascript:">运动鞋</a>
+                        <a href="javascript:">板鞋</a>
+                        <a href="javascript:">运动跑鞋</a>
+                        <a href="javascript:">篮球鞋</a>
+                        <a href="javascript:">靴子</a>
+                        <a href="javascript:">休闲/时装鞋</a>
+                        <a href="javascript:">Reebok</a>
+                        <a href="javascript:">COMMON</a>
+                        <a href="javascript:">VEJA</a>
+                        <a href="javascript:">MATNUT</a>
+                        <a href="javascript:">LI-NING</a>
+                        <a href="javascript:">adidas</a>
+                    </div>
+                </div>
+                <div class="shoes-list-two fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001430.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001431.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="shoes-list-three  fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shoes-bottom clr">
+                <ul>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001484.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="accessories clr">
+            <div class="header-floor clr">
+                <h2 class="floor-title clr">潮人配饰</h2>
+                <ul class="header-more">
+                    <li>
+                        <a href="javascript:">MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="accessories-list clr">
+                <div class="accessories-list-one fl clr">
+                    <div class="accessories-list-one-top clr">
+                        <a class="accessories-list-one-top1 clr" href="javascript:"><img src="images/ia_100001641.jpg" alt=""></a>
+                        <a class="accessories-list-one-top2 clr" href="javascript:"><img src="images/ia_100001652.jpg" alt=""></a>
+                    </div>
+                    <div class="accessories-list-one-navs clr">
+                        <a href="javascript:">单肩包</a>
+                        <a href="javascript:">双肩包</a>
+                        <a href="javascript:">腰包/胸包</a>
+                        <a href="javascript:">钱包/卡包</a>
+                        <a href="javascript:">旅行箱</a>
+                        <a href="javascript:">邮差包</a>
+                        <a href="javascript:">帽子</a>
+                        <a href="javascript:">袜子</a>
+                        <a href="javascript:">首饰</a>
+                        <a href="javascript:">配饰</a>
+                        <a href="javascript:">手表</a>
+                        <a href="javascript:">太阳镜/眼镜</a>
+                    </div>
+                </div>
+                <div class="accessories-list-two fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001430.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001431.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="accessories-list-three  fl clr">
+                    <ul>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                        <li><a href="javascript:"><img src="images/ia_100001432.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accessories-bottom clr">
+                <ul>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001484.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                    <li><a href="javascript:"><img src="images/ia_100001483.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="news clr">
+            <div class="header-floor1 clr">
+                <h2 class="floor-title clr">潮人配饰</h2>
+                <ul class="header-more1 clr">
+                    <li>
+                        <a href="javascript:">MORE</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news-goods ">
+                <div class="news-g1 fl">
+                    <a href="javascript:"><img src="images/ia_100001792.jpg" alt=""></a>
+                    <a href="javascript:"><p>THETHING 扎染羊羔绒贴标卫衣</p></a>
+                    <a href="javascript:">￥399.00</a>
+                </div>
+                <div class="news-g2">
+                    <a href="javascript:"><img src="images/ia_100001786.jpg" alt=""></a>
+                    <a href="javascript:"><p>SMG 多袋短袖衬衫</p></a>
+                    <a href="javascript:">￥799.00</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-floor2 clr">
+            <a href="javascript:"><h2 class="floor-title2 clr">查看更多</h2></a>
+        </div>
+
+    </div>
+    <div class="yoho-footer clr">
+        <div class="footerbottom clr">
+            <div class="promise clr">
+                <div class="center-content clr">
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe604;</span>
+                        <span class="red">100%</span>
+                        <span class="rgbf">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe603;</span>
+                        <span class="red">7天</span>
+                        <span class="rgbf">无理由退换货</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe602;</span>
+                        <a href="javascript:" target="_blank" rel="nofollow">
+                            <span class="red">便捷</span>
+                            <span class="rgbf">在线客服</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-help">
+                <div class="center-content clr">
+                    <div class="left">
+                        <ul class="clr">
+                            <li class="left">
+                                <p>
+                                    <span>新手专区</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">注册登录</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">购物结算</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">下单支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">收货评价</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>会员中心</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">会员制度</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">会员优惠</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">账户管理</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">密码管理</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>购物指南</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">发票</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">尺码对照</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">尺码解读</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">商品咨询</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>支付方式</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">在线支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">货到付款</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">分期支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">优惠券、有货币</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>配送方式</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">配送说明</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">运费说明</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">验货签收</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">收货样品</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>售后服务</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">退换货政策</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">退换货流程</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">投诉与建议</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">在线客服</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>APP常见问题</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">IPhone版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">Android版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">wap版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">IPAD版</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                    <div class="about-us">
+                        <p class="links">
+                            <a href="javascript:" rel="nofollow">返回首页</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">YOHO!BUY 有货</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">新力传媒</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">联系我们</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">商家入驻</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">隐私条款</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">友情链接</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流品牌大全</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流品类大全</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流产品大全</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流资讯</a>
+                            <span>|</span>
+                            <a href="javascript:">穿衣搭配(男生版)</a>
+                            <span>|</span>
+                            <a href="javascript:">穿衣搭配(女生版)</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流人气</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流潮品</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流视频</a>
+                            <span>|</span>
+                            <a class="police" target="_blank" href="javascript:" rel="nofollow">苏公网安备 32010502010132号</a>
+                            <span>|</span>
+                            <a target="_blank" href="javascript:" rel="nofollow">出版物经营许可证</a>
+                            <span>|</span>
+                            <a target="_blank" href="javascript:" rel="nofollow">苏B2-20120395</a>
+                            <span>|</span>
+                            <a target="_blank" href="javascript:" rel="nofollow">食品经营许可证</a>
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        <p></p>
+                        <p>
+                            CopyRight © 2007-2020 南京新与力文化传播有限公司
+                            <a class="rbg6" href="javascript:" target="_blank" rel="nofollow">苏ICP备09011225号</a>
+                            NewPower Co. 版权所有 江苏省南京市建邺区嘉陵江东街18号南京国家广告产业园5栋17，18楼 025-87781000
+                        </p>
+                    </div>
+                
+
+            </div>
+        </div>
+        <div class="right-floating-layer hide">
+            <div class="qrcode-hover-box">
+                <a class="layer-box qrcode-download-right" href="javascript:void(0);" target="_blank">
+                    <span class="qrcode-img" style="background-image: url(images/ia_100000125.png);">&nbsp;</span>
+                </a>
+                <div class="download-app-box">
+                    <div class="download-app-left">
+                        <div class="qr-code-img we-chat-code">
+                            <img src="images/ia_100000104.png">
+                        </div>
+                        <h5 class="qr-words">微信扫一扫</h5>
+                        <h5 class="qr-words">关注公众号，送球鞋</h5>
+                    </div>
+                    <div class="download-app-right">
+                        <div class="qr-code-img mobile-code">
+                            <img src="images/ia_100000104.png">
+                        </div>
+                        <h5 class="qr-words">下载手机客户端</h5>
+                        <h5 class="qr-words qr-more">
+                            <a href="javascript:void(0);" target="_blank">更多客户端下载</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="layer-box return-top">
+                <span class="iconfontlast">^</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/require.js" async = "ture" defer data-main="js/main"></script>
+</html>

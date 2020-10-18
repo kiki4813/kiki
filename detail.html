@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detail.min.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <title> HAMS 夜行者(黑) 撞色系带动鞋</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-cen"> 
+            <div class="yoho-group-map fl">
+                <span class="hamburger" style="background-image: url(images/ia_100000109.png)"></span>
+                <a href="javascript:">YOHO!BUY 有货</a>
+            </div>
+            <div class="swindle-info fl">
+                <span class="icon-note" style="background-image: url(images/ia_100000109.png)"></span>
+                <a href="javascript:">
+                    关于防诈骗的重要提醒
+                </a>
+            </div>
+            <div class="yoho-buy-tools fr">
+                <ul>
+                    <li id="loginBox">
+                        <span class="hi">Hi~</span>
+                        [<a id="signin-url" href="login.html" class="loginbar" rel="nofollow">请登录</a>] 
+                        [<a id="reg-url" href="login.html" class="registbar" rel="nofollow">免费注册</a>] 
+                    </li>
+                    <li class="myyoho" id="myYohoBox">
+                        <span class="tag-seprate"></span>
+                        <a href="javascript:" rel="nofollow">MY有货</a>
+                        <span class="icon-bottomarrow" style="background-image: url(images/ia_100000109.png)"></span>
+                        <div class="simple-user-center"></div>
+                    </li>
+                    <li class="myorder">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-papers" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="javascript:" rel="nofollow">我的订单</a>
+                    </li>
+                    <li class="mycollect">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-heart" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="javascript:" rel="nofollow">我的收藏</a>
+                    </li>
+                    <li class="message">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-mail" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="javascript:" rel="nofollow">消息</a>
+                    </li>
+                    <li class="help nav-drop-down-container">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-bottomarrow" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="#">客户服务</a>
+                        <ul class="nav-drop-down" style="display: none;">
+                            <li>
+                                <a href="javascript:" class="nav-drop-down-a" rel="nofollow" target="_blank">在线客服</a>
+                            </li>
+                            <li>
+                                <a href="javascript:" rel="nofollow">帮助中心</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="we-chat download-code">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-chat" style="background-image: url(images/ia_100000109.png)"></span>
+                        <a href="">关注有货</a>
+                        <div class="download-app-box" style="display: none;">
+                            <div class="we-chat-img code-img" style="background-image: url(images/ia_100000112.png)"></div>
+                            <h5 class="qr-words">微信扫一扫</h5>
+                            <h5 class="qr-words">关注公众号，送球鞋</h5>
+                        </div>
+                    </li>
+                    <li class="phoneapp download-code" id="phoneApp">
+                        <span class="tag-seprate"></span>
+                        <span class="icon-phone" style="background-image: url(images/ia_100000109.png);"></span>
+                        <a href="javascript:" rel="nofollow">手机版</a>
+                        <div class="download-app-box" style="display: none;">
+                            <div class="qr-img code-img" style="background-image: url(images/ia_100000114.png)"></div>
+                            <h5 class="qr-words">下载手机客户端</h5>
+                            <h5 class="qr-more">
+                                <a href="javascript:">更多客户端</a>
+                            </h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="search clr">
+        <div class="search-cen">
+            <h1 class="main-logo" style="background-image: url(images/ia_100000116.png);">
+                <a href="javascript:" class="main-link" title="YOHO!BUY 有货-潮流服饰,潮流女装,潮流男装,时尚潮流购物网站"></a>
+            </h1>
+            <div class="search-area fr">
+                <div class="search-2020">
+                    <form action="javascript:" method="GET" id="search-form">
+                        <input type="hidden" id="defaultsearch" value="">
+                        <input class="search-key fl"  type="text" name="query" id="query-key" autocomplete="off" value="" maxlength="30">
+                        <a class="search-btn fl" href="javascript:submitSearch();" style="background-image: url(images/ia_100000117.png);"></a>
+                    </form>
+                </div>
+                <div class="shopcar fr">
+                    <a href="javascript:" rel="nofollow">
+                        <span class="icon-shopcar "><img src="images/ia_100000120.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav clr">
+        <div class="nav-cen">
+            <ul class="nav-list">
+                <li><a href="javascript:">新品到着</a></li>
+                <li><a href="javascript:">品牌一览</a></li>
+                <li class="contain-third " id="contain1">
+                    <a href="javascript:">服饰</a> 
+                   <div class="third-nav-wrapper" id="third-nav" style="display: none;">
+                         <div class="center-content">
+                            <dl class="hide-list hide"> 
+                                    
+                            </dl> 
+                        </div>
+                    </div> 
+                </li>
+                <li class="contain-third"><a href="javascript:">鞋履</a></li>
+                <li class="contain-third"><a href="javascript:">包袋</a></li>
+                <li class="contain-third"><a href="javascript:">配饰.其他</a></li>
+                <li><a href="javascript:">SALE</a></li>
+                <li><a href="javascript:">证照/协议</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="code-box">
+        <div class="shut">×</div>
+        <div class="code-box-img" style="background-image: url(images/ia_100000121.png);"></div>
+        <h5 class="code-box-title">下载手机客户端</h5>
+    </div>
+    <div>
+        <div class="navload" style="background-image: url(images/ia_100000067.jpg);">
+            <div class="navload-cen clr">
+                <img class="fl" src="images/01edf8bfcc1d3bc3a6d8ad584d607c2d76.jpg" alt="">
+                <div class="navload-cen-home fr"><a href="javascript:">H</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="path-nav">
+            <a href="index.html" title="YOHO!有货">首页</a>
+            <span class="iconfont">></span>
+            <a href="index.html" title="鞋靴">鞋靴</a>
+            <span class="iconfont">></span>
+            <a href="index.html" title="运动鞋">运动鞋</a>
+            <span class="iconfont">></span>
+            <span class="last">HAMS  夜行者(黑)  撞色系带动鞋</span>
+        </div>
+        <div class="magnify clr">
+            <div class="magnify-left fl">
+                <div id="small">
+                    <img src="images/ia_100000000590.jpg" alt="" />
+                    <div id="mark">
+                        <img src="images/ia_100000068.png" alt="">
+                    </div>
+                </div>
+                <div id="big">
+                    <img src="images/ia_100000000590.jpg" alt="" />
+                </div>
+            </div>
+            <div class="magnify-right fr">
+                <div class="magnify-right-name">
+                    <div class="pull-right infos">
+                        <h2 class="name">
+                            HAMS  夜行者(黑)  撞色系带动鞋
+                        </h2>
+                        <div class="line"></div>
+                        <p class="market-price">
+                            <span class="price-row">
+                                <span class="price-title">吊牌价：</span>
+                                <span class="price">¥1280</span>
+                            </span>
+                            <span class="desc">
+                                <span class="vip-price">
+                                    <span class="unlogin">
+                                        登录后即可查看vip价格
+                                    </span>
+                                    <a class="login-url" href="//www.yohobuy.com/signin.html">立即登录</a>
+                                </span>
+                            </span>  
+                        </p>
+                        <div class="line"></div>
+                        <div class="chose-color clr">
+                            <span>
+                                <i>颜色</i>:
+                            </span>
+                            <ul class="clr">
+                                <li title="HAMS  夜行者(黑)  撞色系带动鞋...">
+                                    <img src="images/ia_100000000590.jpg" alt="">
+                                    <span class="color-name">黑</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chose-size clr">
+                            <span>
+                                <i>尺码</i>:
+                            </span>
+                            <div id="size">
+                                <ul class="size">
+                                    <li>35码</li>
+                                    <li>36码</li>
+                                    <li>37码</li>
+                                    <li>38码</li>
+                                    <li>39码</li>
+                                    <li>40码</li>
+                                    <li>41码</li>
+                                    <li>42码</li>
+                                    <li class="disable">43码</li>
+                                    <li>44码</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chose-count clr">
+                            <span>数&nbsp;&nbsp;量:</span>
+                            <div class="num-wraper clr">
+                            <span class="minus-plus">
+                                <i id="minus-num">-</i>
+                            </span>
+                            <span id="num">1</span>
+                            <span class="minus-plus">
+                                <i id="minus-num">+</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <span id="add-to-car">
+                        加入购物车
+                    </span>
+                    <span id="collect-product" >
+                        收藏商品
+                    </span>
+                    <div class="support-service">
+                        <span class="explain">服务说明：</span>
+                        <span class="item">
+                            <i class="iconfont">√</i>
+                            <span class="active" title="全部商品由品牌官方授权">品牌保障</span>
+                        </span>
+                        <span class="item">
+                            <i class="iconfont">√</i>
+                            <span class="active" title="支持7天无理由退换货">支持7天退换货</span>
+                        </span>
+                        <span class="js-more">更多</span>
+                    </div>
+                    <div class="code-img-box">
+                        <img src="images/ia_20201017143910.jpg" alt="">
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        <div class="share clr:after">
+            <span>分享：</span>
+            <a class="share-one" href="javascript:" style="background-image: url(images/ia_100000109.png);"></a>
+            <a class="share-two" href="javascript:" style="background-image: url(images/ia_100000109.png);"></a>
+            <a class="share-three" href="javascript:" style="background-image: url(images/ia_100000109.png);"></a>
+            <a class="share-four" href="javascript:" style="background-image: url(images/ia_100000109.png);"></a>
+        </div>
+        <div class="total">
+            <div class="total-cen">
+                <div class="goodsmessage">
+                    <p class="block-title">
+                        <span class="title-head">
+                            <span class="title">商品信息</span>
+                        </span>
+                    </p>
+                    <div class="description">
+                        <ul class="basic clr:after">
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace" data-key="编&#12288;&#12288;号">编&#12288;&#12288;号: </span>
+                                        <span class="value-space">52141498</span>
+                                </em>
+                            </li>
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace">颜&#12288;&#12288;色: </span>
+                                        <span id="desc-color" title="黑" class="value-space">黑</span>
+                                </em>
+                            </li>
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace" data-key="性&#12288;&#12288;别">性&#12288;&#12288;别: </span>
+                                        <span class="value-space">通用</span>
+                                </em>
+                            </li>
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace" data-key="产&#12288;&#12288;地">产&#12288;&#12288;地: </span>
+                                        <span class="value-space">中国</span>
+                                </em>
+                            </li>
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace" data-key="经典款型">经典款型: </span>
+                                        <span class="value-space">运动跑鞋</span>
+                                </em>
+                            </li>
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace" data-key="鞋&nbsp;&nbsp;帮&nbsp;&nbsp;高">鞋&nbsp;&nbsp;帮&nbsp;&nbsp;高: </span>
+                                        <span class="value-space">低帮</span>
+                                </em>
+                            </li>
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace" data-key="跟&#12288;&#12288;高">跟&#12288;&#12288;高: </span>
+                                        <span class="value-space">平</span>
+                                </em>
+                            </li>
+                            <li>
+                                <em class="justpostion">
+                                        <span class="keySpace" data-key="鞋&#12288;&#12288;底">鞋&#12288;&#12288;底: </span>
+                                        <span class="value-space">平底</span>
+                                </em>
+                            </li>
+                        </ul>
+                        <ul class="comfort clr:after">
+                            <li class="pull-left">
+                                <span class="comfort-title">弹&#12288;性：</span>
+                                <span class="min-des">小</span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block cur"></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="max-des">大</span>
+                            </li>
+                            <li class="pull-left">
+                                <span class="comfort-title">厚&#12288;度：</span>
+                                <span class="min-des">薄</span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block cur"></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="max-des">厚</span>
+                            </li>
+                            <li class="pull-left">
+                                <span class="comfort-title">柔软度：</span>
+                                <span class="min-des">软</span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block cur"></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="max-des">硬</span>
+                            </li>
+                            <li class="pull-left">
+                                <span class="comfort-title">透气性：</span>
+                                <span class="min-des">弱</span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block cur"></span>
+                                <span class="comfort-block "></span>
+                                <span class="comfort-block "></span>
+                                <span class="max-des">强</span>
+                            </li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="description-material-tab" id="sizeMessage" data-id="1">
+                    <p class="block-title" id="sizeTitle">
+                        <span class="title-head"> <span class="title">尺码信息</span> </span>
+                    </p>
+                    <div class="size-content">
+                        <div class="size-info ">
+                            <table class="size-table">
+                                <thead>
+                                    <tr>
+                                        <th>吊牌尺码</th>
+                                        <th>内长</th>
+                                        <th>帮高</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>35码</td>
+                                        <td>22</td>
+                                        <td>8.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: rgb(249, 249, 249);">36码</td>
+                                        <td style="background-color: rgb(249, 249, 249);">23</td>
+                                        <td style="background-color: rgb(249, 249, 249);">8.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>37码</td>
+                                        <td>23.5</td>
+                                        <td>8.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: rgb(249, 249, 249);">38码</td>
+                                        <td style="background-color: rgb(249, 249, 249);">24</td>
+                                        <td style="background-color: rgb(249, 249, 249);">8.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>39码</td>
+                                        <td>25</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: rgb(249, 249, 249);">40码</td>
+                                        <td style="background-color: rgb(249, 249, 249);">25.5</td>
+                                        <td style="background-color: rgb(249, 249, 249);">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>41码</td>
+                                        <td>26</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: rgb(249, 249, 249);">42码</td>
+                                        <td style="background-color: rgb(249, 249, 249);">26.5</td>
+                                        <td style="background-color: rgb(249, 249, 249);">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>43码</td>
+                                        <td>27</td>
+                                        <td>9.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: rgb(249, 249, 249);">44码</td>
+                                        <td style="background-color: rgb(249, 249, 249);">27.5</td>
+                                        <td style="background-color: rgb(249, 249, 249);">9.5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="size-tip">
+                                ※ 以上尺寸为实物人工测量，因测量方式不同会有1-2CM误差，相关数据仅作参考，以收到实物为准。 单位：CM
+                                <br />
+                                ※ 参考尺码因衣服版型、剪裁不同会有误差，仅供参考
+                            </p>
+                                <img class="size-img" src="//static.yohobuy.com/images/147.jpg?imageView2/2/interlace/1/q/75">
+                        </div>
+                    </div>
+                </div>
+                <div class="details" id="goodsInside" data-id="2">
+                    <p class="block-title" id="goodsTitle">
+                        <span class="title-head"> <span class="title">商品详情</span> </span>
+                    </p>
+                    <div id="details-html" class="details-html">
+                        <div class="lazy-load-object">
+                            
+                        </div>
+                        <div id="details-intro-holder">
+                            <p>20-30年轻人潮流鞋履，是个结合了设计，工艺开发和文化创意的运动休闲鞋潮牌</p>
+                            <p><img src="images/ia_100000000588.jpg"/></p>
+                            <p><img src="images/ia_100000000586.jpg"/></p>
+                            <p><img src="images/ia_100000000584.jpg"/></p>
+                            <p><img src="images/ia_100000000582.jpg"/></p>
+                            <p><img src="images/ia_100000000580.jpg"/></p>
+                            <p><img src="images/ia_100000000578.jpg"/></p>
+                            <p><img src="images/ia_100000000576.jpg"/></p>
+                            <p><img src="images/ia_100000000574.jpg"/></p>
+                            <p><img src="images/ia_100000000572.jpg"/></p>
+                            <p><img src="images/ia_100000000570.jpg"/></p>
+                            <p><img src="images/ia_100000000568.jpg"/></p>
+                            <p><img src="images/ia_100000000566.jpg"/></p>
+                            <p><img src="images/ia_100000000564.jpg"/></p>
+                        </div>
+                    </div>
+                    <div class="special-desc info-block getnav">
+                        <p class="block-title">
+                            <span class="title-head"> <span class="title">特别说明</span> </span>
+                        </p>
+                        <div class="special-desc-content">
+                            <p class="price-item-name">&#x5E7F;&#x544A;&#x7981;&#x7528;&#x8BCD;</p>
+                            <p class="price-item-content">&#x6839;&#x636E;&#x65B0;&#x5E7F;&#x544A;&#x6CD5;&#x89C4;&#x5B9A;&#xFF0C;&#x6240;&#x6709;&#x9875;&#x9762;&#x4E0D;&#x5F97;&#x51FA;&#x73B0;&#x5E7F;&#x544A;&#x7981;&#x7528;&#x8BCD;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x6B64;&#x90D1;&#x91CD;&#x8868;&#x6001;&#xFF1A;&#x652F;&#x6301;&#x65B0;&#x5E7F;&#x544A;&#x6CD5;&#xFF0C;&#x4E5F;&#x4E3A;&#x4E86;&#x4E0D;&#x5F71;&#x54CD;&#x6D88;&#x8D39;&#x8005;&#x6B63;&#x5E38;&#x8D2D;&#x7269;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5728;&#x6392;&#x67E5;&#x4FEE;&#x6539;&#xFF1B;&#x672C;&#x9875;&#x9762;&#x6240;&#x6709;&#x5E7F;&#x544A;&#x7981;&#x7528;&#x8BCD;&#x5728;&#x6B64;&#x58F0;&#x660E;&#x5931;&#x6548;&#xFF0C;&#x4E0D;&#x4F5C;&#x4E3A;&#x8D54;&#x4ED8;&#x7406;&#x7531;&#xFF0C;&#x8BF7;&#x4E3A;&#x771F;&#x6B63;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x8BA9;&#x8DEF;&#x3002;&#x7EF4;&#x6743;&#x662F;&#x53CC;&#x5411;&#x7684;&#xFF0C;&#x5E0C;&#x671B;&#x5404;&#x4F4D;&#x6D88;&#x8D39;&#x8005;&#x7406;&#x89E3;&#xFF0C;&#x5728;&#x6B64;&#x611F;&#x8C22;&#xFF01;</p>
+                            <p class="price-item-name">&#x9875;&#x9762;&#x4EF7;&#x683C;</p>
+                            <p class="price-item-content">&#x5212;&#x7EBF;&#x4EF7;&#x683C;&#x6307;&#x5546;&#x54C1;&#x7684;&#x540A;&#x724C;&#x4EF7;&#x3001;&#x54C1;&#x724C;&#x6307;&#x5BFC;&#x4EF7;&#x6216;&#x8BE5;&#x5546;&#x54C1;&#x7684;&#x66FE;&#x5C55;&#x793A;&#x8FC7;&#x7684;&#x9500;&#x552E;&#x4EF7;&#x7B49;&#xFF0C;&#x5E76;&#x975E;&#x539F;&#x4EF7;&#xFF0C;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;&#x3002;&#x65E0;&#x5212;&#x7EBF;&#x4EF7;&#x683C;&#x6307;&#x5546;&#x54C1;&#x7684;&#x5B9E;&#x65F6;&#x9500;&#x552E;&#x4EF7;&#xFF0C;&#x4E0D;&#x56E0;&#x8868;&#x8FF0;&#x7684;&#x5DEE;&#x5F02;&#x6539;&#x53D8;&#x6027;&#x8D28;&#x3002;&#x5177;&#x4F53;&#x6210;&#x4EA4;&#x4EF7;&#x683C;&#x6839;&#x636E;&#x5546;&#x54C1;&#x53C2;&#x52A0;&#x6D3B;&#x52A8;&#xFF0C;&#x6216;&#x4F1A;&#x5458;&#x4F7F;&#x7528;&#x4F18;&#x60E0;&#x5238;/&#x7801;&#x3001;&#x6709;&#x8D27;&#x5E01;&#x7B49;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x6700;&#x7EC8;&#x4EE5;&#x8BA2;&#x5355;&#x7ED3;&#x7B97;&#x9875;&#x4EF7;&#x683C;&#x4E3A;&#x51C6;&#x3002;</p>
+                            <p class="price-item-name">&#x4EF7;&#x683C;&#x5F02;&#x5E38;</p>
+                            <p class="price-item-content">&#x53EF;&#x80FD;&#x56E0;&#x4E3A;&#x5B58;&#x5728;&#x7CFB;&#x7EDF;&#x7F13;&#x5B58;&#x3001;&#x9875;&#x9762;&#x5EF6;&#x8FDF;&#x7B49;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#xFF0C;&#x5BFC;&#x81F4;&#x4EF7;&#x683C;&#x3001;&#x4FC3;&#x9500;&#x6216;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x6D3B;&#x52A8;&#x663E;&#x793A;&#x5F02;&#x5E38;&#xFF0C;&#x5546;&#x54C1;&#x5177;&#x4F53;&#x7ED3;&#x7B97;&#x4FE1;&#x606F;&#x4EE5;&#x8BA2;&#x5355;&#x7ED3;&#x7B97;&#x9875;&#x9762;&#x663E;&#x793A;&#x4E3A;&#x51C6;&#x3002;&#x5982;&#x60A8;&#x53D1;&#x73B0;&#x6B64;&#x7C7B;&#x60C5;&#x51B5;&#xFF0C;&#x8BF7;&#x7ACB;&#x5373;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&#x5BA2;&#x670D;&#x8C03;&#x6574;&#x3002;</p>
+                            <p class="price-summary">&#x6B64;&#x8BF4;&#x660E;&#x4EC5;&#x5F53;&#x51FA;&#x73B0;&#x4EF7;&#x683C;&#x6BD4;&#x8F83;&#x65F6;&#x6709;&#x6548;&#xFF0C;&#x82E5;&#x5546;&#x5BB6;&#x5355;&#x72EC;&#x5BF9;&#x4EF7;&#x683C;&#x8FDB;&#x884C;&#x8BF4;&#x660E;&#x7684;&#xFF0C;&#x4EE5;&#x5546;&#x5BB6;&#x7684;&#x8868;&#x8FF0;&#x4E3A;&#x51C6;&#x3002;</p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="yoho-footer clr">
+        <div class="footerbottom clr">
+            <div class="promise clr">
+                <div class="center-content clr">
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe604;</span>
+                        <span class="red">100%</span>
+                        <span class="rgbf">品牌正品</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe603;</span>
+                        <span class="red">7天</span>
+                        <span class="rgbf">无理由退换货</span>
+                    </div>
+                    <div class="left">
+                        <span class="iconfont rgbf">&#xe602;</span>
+                        <a href="javascript:" target="_blank" rel="nofollow">
+                            <span class="red">便捷</span>
+                            <span class="rgbf">在线客服</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-help">
+                <div class="center-content clr">
+                    <div class="left">
+                        <ul class="clr">
+                            <li class="left">
+                                <p>
+                                    <span>新手专区</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">注册登录</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">购物结算</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">下单支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">收货评价</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>会员中心</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">会员制度</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">会员优惠</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">账户管理</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">密码管理</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>购物指南</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">发票</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">尺码对照</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">尺码解读</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">商品咨询</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>支付方式</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">在线支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">货到付款</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">分期支付</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">优惠券、有货币</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>配送方式</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">配送说明</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">运费说明</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">验货签收</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">收货样品</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>售后服务</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">退换货政策</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">退换货流程</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">投诉与建议</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">在线客服</a>
+                                </p>
+                            </li>
+                            <li class="left">
+                                <p>
+                                    <span>APP常见问题</span>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">IPhone版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">Android版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">wap版</a>
+                                </p>
+                                <p>
+                                    <a href="javascript:" target="_blank" rel="nofollow">IPAD版</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-link">
+                    <div class="about-us">
+                        <p class="links">
+                            <a href="javascript:" rel="nofollow">返回首页</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">YOHO!BUY 有货</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">新力传媒</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">联系我们</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">商家入驻</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">隐私条款</a>
+                            <span>|</span>
+                            <a href="javascript:" rel="nofollow">友情链接</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流品牌大全</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流品类大全</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流产品大全</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流资讯</a>
+                            <span>|</span>
+                            <a href="javascript:">穿衣搭配(男生版)</a>
+                            <span>|</span>
+                            <a href="javascript:">穿衣搭配(女生版)</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流人气</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流潮品</a>
+                            <span>|</span>
+                            <a href="javascript:">潮流视频</a>
+                            <span>|</span>
+                            <a class="police" target="_blank" href="javascript:" rel="nofollow">苏公网安备 32010502010132号</a>
+                            <span>|</span>
+                            <a target="_blank" href="javascript:" rel="nofollow">出版物经营许可证</a>
+                            <span>|</span>
+                            <a target="_blank" href="javascript:" rel="nofollow">苏B2-20120395</a>
+                            <span>|</span>
+                            <a target="_blank" href="javascript:" rel="nofollow">食品经营许可证</a>
+                        </p>
+                    </div>
+                    <div class="copyright">
+                        <p></p>
+                        <p>
+                            CopyRight © 2007-2020 南京新与力文化传播有限公司
+                            <a class="rbg6" href="javascript:" target="_blank" rel="nofollow">苏ICP备09011225号</a>
+                            NewPower Co. 版权所有 江苏省南京市建邺区嘉陵江东街18号南京国家广告产业园5栋17，18楼 025-87781000
+                        </p>
+                    </div>
+                
+
+            </div>
+        </div>
+        <div class="right-floating-layer hide">
+            <div class="qrcode-hover-box">
+                <a class="layer-box qrcode-download-right" href="javascript:void(0);" target="_blank">
+                    <span class="qrcode-img" style="background-image: url(images/ia_100000125.png);">&nbsp;</span>
+                </a>
+                <div class="download-app-box">
+                    <div class="download-app-left">
+                        <div class="qr-code-img we-chat-code">
+                            <img src="images/ia_100000104.png">
+                        </div>
+                        <h5 class="qr-words">微信扫一扫</h5>
+                        <h5 class="qr-words">关注公众号，送球鞋</h5>
+                    </div>
+                    <div class="download-app-right">
+                        <div class="qr-code-img mobile-code">
+                            <img src="images/ia_100000104.png">
+                        </div>
+                        <h5 class="qr-words">下载手机客户端</h5>
+                        <h5 class="qr-words qr-more">
+                            <a href="javascript:void(0);" target="_blank">更多客户端下载</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="layer-box return-top">
+                <span class="iconfontlast">^</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/require.js" async = "ture" defer data-main="js/main2"></script>
+</html>

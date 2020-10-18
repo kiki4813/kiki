@@ -1,0 +1,90 @@
+
+[	{
+		"id":0,
+		"title":"服饰",
+		"img":"dist/images/01b9fb0416a35473b24f8fd2aae06a6ec8.jpg",
+		"child":[
+				{"title":"上装"},
+					{"title":"T恤"},
+					{"title":"卫衣"},
+					{"title":"夹克"},
+					{"title":"衬衫"},
+					{"title":"POLO"},
+					{"title":"防风外套"},
+				
+			
+				{"title":"下装"},
+					{"title":"休闲裤"},
+					{"title":"牛仔裤"},
+					{"title":"短裤"},
+					{"title":"运动裤"},
+					{"title":"工装裤"},
+
+
+				{"title":"热门品牌"},
+					{"title":"Dickies"},
+					{"title":"Levi’s"},
+					{"title":"DUSTY"},
+					{"title":"THETHING"},
+					{"title":"viishow"},
+					{"title":"STORE by NIGO®"},
+					{"title":"鬼洗"}
+				
+			
+		]
+	},
+
+	{
+		"id":1,
+		"title":"鞋履",
+		"img":"dist/images/010d8518a8d63176d49126e91801c8c8ab.jpg",
+		"child":[
+				{"title":"鞋履"},
+					{"title":"运动鞋"},
+					{"title":"休闲鞋"},
+					{"title":"跑步鞋"},
+					{"title":"板鞋"},
+					{"title":"篮球鞋"},
+					{"title":"靴子"},
+				
+			
+				{"title":"热门品牌"},
+				
+					{"title":"DC"},
+					{"title":"CAT"},
+					{"title":"STARTER"},
+					{"title":"PENSOLE"},
+					{"title":"VEJA"},
+					{"title":"TRENDIANO"},
+					{"title":"Onitsuka Tiger"}
+				
+			
+		]
+	},
+
+	{
+		"id":2,
+		"title":"包袋",
+		"img":"dist/images/01a40d82ac6a65d20ef6b7b9b37463ae62.jpg",
+		"child":[
+				{"title":"包"},
+				
+				{"title":"双肩包"},
+				{"title":"手拎包/单肩包"},
+				{"title":"腰包/胸包"},
+				{"title":"钱包/卡包"},
+				{"title":"旅行箱"},
+				
+				{"title":"热门品牌"},
+
+				{"title":"COMBACK"},
+				{"title":"Mandarina Duck"},
+				{"title":"初弎"},
+				{"title":"SPRAYGROUND"},
+				{"title":"Draconite"},
+				{"title":"Herschel Supply"},
+				{"title":"RAWROW"}
+	
+		]
+	}	
+]
